@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        .container{
+            margin-left: 600px;
+            margin-top: 50px;
+            padding: 20px;
+            border: 5px solid goldenrod;
+            background-color: azure;
+            width: 300px;
+            height: 150px;
+            border-radius: 40px;
+        }
+        input::placeholder{
+          background-color: lightblue;
+        }
+        textarea{
+            background-color: lightblue;
+            width: 100%;
+        }
+        input{
+            margin: 1px;
+            width: 100%;
+        }
+        input[type="submit"]:hover{
+            background-color: aqua;
+
+        }
+        label{
+            font-weight: 100;
+            font-style: italic;
+
+        }
+    </style>
+</head>
+<body>
+    <h1 style="  text-align: center; background-color: bisque; ">Contact Form</h1>
+    <div class="container">
+        <form action="/boxmodel.html">
+            <label for="name">NAME:</label><br>
+            <input id="name" name="name" placeholder="Enter your Name"><br>
+            <label for="email">Email:</label><br>
+            <input id="email" name="email" placeholder="name@gmail.com"><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message">Write a Message</textarea><br>
+            <input type="submit" id="submit" name="submit" value="submit" ">
+        </form>
+    </div>
+</body>
+</html>
